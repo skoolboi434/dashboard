@@ -1,0 +1,44 @@
+.main-header {
+  .nav-custom {
+    background-color: $primary;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo-container {
+      display: flex;
+      align-items: center;
+      color: $white;
+      .fa {
+        margin-right: 15px;
+        font-size: 32px;
+        font-weight: 700;
+      }
+      .logo {
+        font-weight: 700;
+        font-size: 32px;
+        margin: 0;
+      }
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      .menu-item {
+        display: inline-flex;
+        align-items: center;
+        height: 55px;
+        color: $white;
+        text-transform: uppercase;
+        padding: 0 20px;
+        cursor: pointer;
+        transition-duration: 0.4s;
+
+        &:hover {
+          background-color: $primary-light;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

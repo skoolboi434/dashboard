@@ -1,0 +1,79 @@
+.main-header .nav-custom {
+  background-color: #885ff8;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-header .nav-custom .logo-container {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.main-header .nav-custom .logo-container .fa {
+  margin-right: 15px;
+  font-size: 32px;
+  font-weight: 700;
+}
+.main-header .nav-custom .logo-container .logo {
+  font-weight: 700;
+  font-size: 32px;
+  margin: 0;
+}
+.main-header .nav-custom .menu {
+  display: flex;
+  align-items: center;
+}
+.main-header .nav-custom .menu .menu-item {
+  display: inline-flex;
+  align-items: center;
+  height: 55px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 0 20px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+.main-header .nav-custom .menu .menu-item:hover {
+  background-color: #a25ff8;
+  text-decoration: none;
+}
+
+.form-container.sign-up,
+.form-container .login {
+  background-color: #ffffff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 100%;
+  max-width: 500px;
+  padding: 50px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15% auto;
+  border-radius: 5px;
+}
+.form-container.sign-up .btn,
+.form-container .login .btn {
+  display: block;
+  width: 100%;
+}
+.form-container .heading-container .heading {
+  font-size: 30px;
+  color: #885ff8;
+}
+.form-container .heading-container .sub-heading {
+  font-size: 20px;
+}
+.form-container .heading-container .sub-heading a {
+  color: #a25ff8;
+}
+
+.btn-primary {
+  background-color: #885ff8;
+  border-color: #885ff8;
+  transition-duration: 0.4s;
+}
+.btn-primary:hover {
+  background-color: #a25ff8;
+  border-color: #a25ff8;
+}/*# sourceMappingURL=custom.css.map */
