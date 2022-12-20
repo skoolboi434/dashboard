@@ -1,0 +1,70 @@
+.left-side {
+  width: 57px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: $darkgray-blue;
+  position: fixed;
+  transition: all 0.5s;
+
+  &:hover {
+    width: 200px;
+    ul {
+      .menu-heading {
+        opacity: 1;
+      }
+    }
+  }
+
+  .db-menu {
+    padding-left: 0;
+    .menu-heading {
+      opacity: 0;
+      padding: 10px 5px 10px 10px;
+      color: $white;
+      font-size: smaller;
+      border-bottom: 1px solid darken($primary, 5%);
+      transition: all 0.5s;
+    }
+    .db-menu-item {
+      list-style-type: none;
+      &.active a {
+        background: lighten($primary, 10%);
+        color: $white;
+        &:hover {
+          background: lighten($primary, 5%);
+        }
+      }
+      .db-menu-link {
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+        color: $white;
+        padding: 15px 10px;
+        width: 200px;
+        border-bottom: 1px solid darken($darkgray-blue, 5%);
+        background: $darkgray-blue;
+        text-decoration: none;
+
+        &:hover {
+          background-color: darken($darkgray-blue, 5%);
+          text-decoration: none;
+          i {
+            color: $primary;
+          }
+        }
+
+        &:focus {
+          text-decoration: none;
+        }
+
+        i {
+          width: 50px;
+          text-align: center;
+          padding-right: 15px;
+          transition: all 1s;
+        }
+      }
+    }
+  }
+}

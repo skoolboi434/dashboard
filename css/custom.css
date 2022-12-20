@@ -60,6 +60,7 @@
 .form-container .heading-container .heading {
   font-size: 30px;
   color: #885ff8;
+  margin-top: 0;
 }
 .form-container .heading-container .sub-heading {
   font-size: 20px;
@@ -76,4 +77,68 @@
 .btn-primary:hover {
   background-color: #a25ff8;
   border-color: #a25ff8;
+}
+
+.left-side {
+  width: 57px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #354052;
+  position: fixed;
+  transition: all 0.5s;
+}
+.left-side:hover {
+  width: 200px;
+}
+.left-side:hover ul .menu-heading {
+  opacity: 1;
+}
+.left-side .db-menu {
+  padding-left: 0;
+}
+.left-side .db-menu .menu-heading {
+  opacity: 0;
+  padding: 10px 5px 10px 10px;
+  color: #ffffff;
+  font-size: smaller;
+  border-bottom: 1px solid #7647f7;
+  transition: all 0.5s;
+}
+.left-side .db-menu .db-menu-item {
+  list-style-type: none;
+}
+.left-side .db-menu .db-menu-item.active a {
+  background: #ac90fa;
+  color: #ffffff;
+}
+.left-side .db-menu .db-menu-item.active a:hover {
+  background: #9a77f9;
+}
+.left-side .db-menu .db-menu-item .db-menu-link {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #ffffff;
+  padding: 15px 10px;
+  width: 200px;
+  border-bottom: 1px solid #2b3443;
+  background: #354052;
+  text-decoration: none;
+}
+.left-side .db-menu .db-menu-item .db-menu-link:hover {
+  background-color: #2b3443;
+  text-decoration: none;
+}
+.left-side .db-menu .db-menu-item .db-menu-link:hover i {
+  color: #885ff8;
+}
+.left-side .db-menu .db-menu-item .db-menu-link:focus {
+  text-decoration: none;
+}
+.left-side .db-menu .db-menu-item .db-menu-link i {
+  width: 50px;
+  text-align: center;
+  padding-right: 15px;
+  transition: all 1s;
 }/*# sourceMappingURL=custom.css.map */
