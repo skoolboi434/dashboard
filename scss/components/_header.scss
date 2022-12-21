@@ -1,6 +1,6 @@
 .main-header {
   .nav-custom {
-    background-color: $primary;
+    background-color: $darkgray-blue;
     padding: 0px 20px;
     display: flex;
     align-items: center;
@@ -35,7 +35,7 @@
         transition-duration: 0.4s;
 
         &:hover {
-          background-color: $primary-light;
+          background-color: $primary;
           text-decoration: none;
         }
       }

@@ -1,18 +1,28 @@
+<?php
+
+// require_once 'inc/db-connect.php';
+// require_once 'inc/functions.php';
+
+?>
 <div class="page-container">
   <div class="container">
     <div class="form-container sign-up">
       <div class="heading-container text-center mb-5">
-        <h1 class="heading">Login</h1>
-        <h2 class="sub-heading">Don't have an account? <a href="index.php?page=sign-up">Sign Up</a></h2>
+        <h1 class="heading">Create Account</h1>
+        <h2 class="sub-heading">Already have an account? <a href="index.php?page=login">Login</a></h2>
       </div>
 
-      <form action="" method="POST">
+      <form action="./inc/functions.php" method="POST">
         <div class="signup-field form-group">
-          <input class="form-control" type="text" name="username" placeholder="Username" required>
+          <input class="form-control" type="text" name="name" placeholder="Enter Full Name" required>
         </div>
 
         <div class="signup-field form-group">
           <input class="form-control" type="text" name="email" placeholder="Email" required>
+        </div>
+
+        <div class="signup-field form-group">
+          <input class="form-control" type="text" name="username" placeholder="Username" required>
         </div>
 
         <div class="signup-field form-group">
@@ -23,7 +33,7 @@
           <input class="form-control" type="text" name="passwordmatch" placeholder="Retype Password" required>
         </div>
 
-        <button class="btn-primary btn">Sign Up</button>
+        <button type="submit" name="submit" class="btn-primary btn">Sign Up</button>
       </form>
     </div>
   </div>
