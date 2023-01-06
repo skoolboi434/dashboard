@@ -10,6 +10,8 @@
   <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/custom.css">
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+  <script src="/js/main.js" defer></script>
   <title>PHP Dashboard</title>
 </head>
 <body>
@@ -23,7 +25,7 @@
     <div class="menu">
       <a href="index.php" class="menu-item">Home</a>
       <a href="#" class="menu-item">About</a>
-      <a href="index.php?page=sign-up" class="menu-item">Sign Up</a>
+      <a href="index.php?page=signup" class="menu-item">Sign Up</a>
       <a href="index.php?page=login" class="menu-item">Login</a>
     </div>
   </nav>
