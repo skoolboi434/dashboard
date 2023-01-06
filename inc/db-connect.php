@@ -1,8 +1,8 @@
 <?php
 
 $servername = "localhost";
-$username = "admin";
-$password = "password1234";
+$username = "root";
+$password = "";
 $db = "ecommerce";
 
 $conn = mysqli_connect($servername, $username, $password, $db);

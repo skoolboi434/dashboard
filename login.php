@@ -42,7 +42,10 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         <h2 class="sub-heading">Don't have an account? <a href="index.php?page=sign-up">Sign Up</a></h2>
       </div>
 
-      <form action="" method="POST">
+      <form action="">
+        <div class="signup-field form-group">
+          <input class="form-control" type="text" name="username" placeholder="Username" required>
+        </div>
 
 
         <div class="signup-field form-group">
