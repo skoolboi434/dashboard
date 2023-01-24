@@ -8,3 +8,10 @@
     border-color: $primary-light;
   }
 }
+
+.btn-third {
+  background-color: $third;
+  border-color: $third;
+  transition-duration: 0.4s;
+  color: $white;
+}

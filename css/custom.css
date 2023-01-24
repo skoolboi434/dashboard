@@ -79,6 +79,13 @@
   border-color: #a25ff8;
 }
 
+.btn-third {
+  background-color: #f8885f;
+  border-color: #f8885f;
+  transition-duration: 0.4s;
+  color: #ffffff;
+}
+
 .db-menu {
   padding-left: 0;
 }
@@ -145,8 +152,6 @@
 }
 .dashboard-main .right-side {
   padding-left: 120px;
-  background-color: #e3e5e6;
-  height: 93.2vh;
 }
 .dashboard-main .right-side .table-container {
   background-color: #ffffff;
@@ -171,6 +176,18 @@
 .dashboard-main .right-side .orders .table-responsive .table thead th,
 .dashboard-main .right-side .users .table-responsive .table thead th {
   border-bottom: none;
+}
+
+.top-container .heading {
+  margin: 0 15px 0 0;
+}
+.top-container .btn {
+  display: flex !important;
+  align-items: center;
+}
+
+.wrap {
+  background-color: #e3e5e6;
 }
 
 a {

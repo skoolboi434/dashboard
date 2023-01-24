@@ -2,6 +2,10 @@
 @import 'components/_components';
 @import 'pages/_pages';
 
+.wrap {
+  background-color: $gray;
+}
+
 a {
   text-decoration: none !important;
 }

@@ -1,26 +1,26 @@
-
-
 <div class="dashboard-main">
   <div class="left-side">
-    <ul class="db-menu">
-      <li class="menu-heading">Dashboard</li>
-      <li class="db-menu-item active">
-        <a href="index?page=dashboard" class="db-menu-link"><i class="fa-solid fa-house"></i> Overview</a>
-      </li>
-      <li class="db-menu-item">
-        <a href="index?page=dashboard" class="db-menu-link"><i class="fa-solid fa-thumbtack"></i> Products</a>
-      </li>
-      <li class="db-menu-item">
-        <a href="index?page=dashboard" class="db-menu-link"><i class="fa-solid fa-shop"></i> Orders</a>
-      </li>
-      <li class="db-menu-item">
-        <a href="index?page=dashboard" class="db-menu-link"><i class="fa fa-user"></i> Users</a>
-      </li>
-    </ul>
+    <?php include 'sidenav.php' ?>
   </div>
   <div class="right-side">
+    <?php
+      if (isset($_SESSION["user_id"])) {
+      $conn = require __DIR__ . '/inc/db-connect.php';
+
+      $sql = "SELECT * FROM user WHERE id = {$_SESSION["user_id"]}";
+
+      $result = $conn->query($sql);
+
+      $user = $result->fetch_assoc(); 
+      
+      ?>
+
+      <div class="container text-center py-3">
+        <h2>Welcome, <?php echo $user["name"]; ?></h2>
+      </div>
+    <?php } ?>
     <div class="container">
-      <h3 class="heading">Dashboard Admin</h3>
+      <h2 class="heading">Dashboard Admin</h2>
       <div class="row">
         <div class="col-md-6">
           <div class="orders table-container">
