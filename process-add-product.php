@@ -27,7 +27,7 @@ if($result == true) {
 } else {
   echo "Error: " . $sql . " " . $conn->error;
 }
-header('Location: index.php?page=dashboard-products');
+  header('Location: index.php?page=dashboard-products');
   exit;
 $conn->close();
 

@@ -17,6 +17,7 @@
     <div class="product-list-container">
       <div class="container">
         <div class="top-container d-flex my-5">
+          
           <h1 class="heading">Projects</h1>
           <a href="index.php?page=dashboard-add" class="btn btn-primary d-block">Add New</a>
         </div>
@@ -31,10 +32,10 @@
             <?php foreach($products as $product) : ?>
               <tr>
                 <td><?= $product['id'] ?></td>
-                <td><a href="index.php?page=dashboard-product-edit&id=<?=$product['id']?>" class="edit-link"><?= $product['product_name'] ?></a></td>
+                <td><a href="index.php?page=dashboard-edit&id=<?=$product['id']?>" class="edit-link"><?= $product['product_name'] ?></a></td>
                 <td><?= $product['created_at'] ?></td>
                 <td>
-                  <a href="index.php?page=dashboard-edit" class="btn btn-third">Edit</a>
+                  <a href="index.php?page=dashboard-edit&id=<?=$product['id']?>" class="btn btn-third">Edit</a>
                   <a href="index.php?page=dashboard-delete" class="btn btn-danger">Delete</a></td>
                   </tr>
             <?php endforeach; ?>
