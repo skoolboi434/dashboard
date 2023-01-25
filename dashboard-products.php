@@ -36,7 +36,7 @@
                 <td><?= $product['created_at'] ?></td>
                 <td>
                   <a href="index.php?page=dashboard-edit&id=<?=$product['id']?>" class="btn btn-third">Edit</a>
-                  <a href="index.php?page=dashboard-delete" class="btn btn-danger">Delete</a></td>
+                  <a href="index.php?page=process-delete&id=<?=$product['id']?>" class="btn btn-danger">Delete</a></td>
                   </tr>
             <?php endforeach; ?>
           </tbody>
