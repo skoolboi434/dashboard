@@ -17,9 +17,10 @@
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="js/main.js"></script>
   <link rel="stylesheet" href="css/custom.css">
   <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
-  <script src="/js/main.js" defer></script>
+ 
   <title>PHP Dashboard</title>
 </head>
 <body>
@@ -33,9 +34,7 @@
       <h3 class="logo">Dashboard</h3>
     </div>
     <div class="menu">
-      <a href="index.php" class="menu-item">Home</a>
-      <a href="#" class="menu-item">About</a>
-      <a href="index.php?page=signup" class="menu-item">Sign Up</a>
+      
       <?php 
       if (isset($_SESSION["user_id"])) :?>
       <a href="index.php?page=login" class="menu-item">Logout</a>
