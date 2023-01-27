@@ -1,5 +1,5 @@
 .main-header .nav-custom {
-  background-color: #354052;
+  background-color: rgb(21, 30, 47);
   padding: 0px 20px;
   display: flex;
   align-items: center;
@@ -86,96 +86,171 @@
   color: #ffffff;
 }
 
-.db-menu {
-  padding-left: 0;
-}
-.db-menu .menu-heading {
-  opacity: 0;
-  padding: 10px 5px 10px 10px;
-  color: #ffffff;
-  font-size: smaller;
-  border-bottom: 1px solid #7647f7;
-  transition: all 0.5s;
-}
-.db-menu .db-menu-item {
-  list-style-type: none;
-}
-.db-menu .db-menu-item.active a {
-  background: #ac90fa;
-  color: #ffffff;
-}
-.db-menu .db-menu-item.active a:hover {
-  background: #9a77f9;
-}
-.db-menu .db-menu-item .db-menu-link {
+.sidebar {
+  flex-basis: 200px;
+  max-width: 200px;
+  flex-shrink: 0;
+  background-color: rgb(21, 30, 47);
   display: flex;
-  align-items: center;
-  font-size: 13px;
-  color: #ffffff;
-  padding: 15px 10px;
-  width: 200px;
-  border-bottom: 1px solid #2b3443;
-  background: #354052;
-  text-decoration: none;
+  flex-direction: column;
 }
-.db-menu .db-menu-item .db-menu-link:hover {
-  background-color: #2b3443;
-  text-decoration: none;
-}
-.db-menu .db-menu-item .db-menu-link:hover i {
-  color: #885ff8;
-}
-.db-menu .db-menu-item .db-menu-link:focus {
-  text-decoration: none;
-}
-.db-menu .db-menu-item .db-menu-link i {
-  width: 50px;
-  text-align: center;
-  padding-right: 15px;
-  transition: all 1s;
-}
-
-.dashboard-main .left-side {
-  width: 57px;
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  background-color: #354052;
-  position: fixed;
-  transition: all 0.5s;
-}
-.dashboard-main .left-side:hover {
-  width: 200px;
-}
-.dashboard-main .left-side:hover ul .menu-heading {
-  opacity: 1;
-}
-.dashboard-main .right-side {
-  padding-left: 120px;
-}
-.dashboard-main .right-side .table-container {
-  background-color: #ffffff;
-  border-radius: 5px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-.dashboard-main .right-side .orders .table-responsive .tb-heading-container,
-.dashboard-main .right-side .users .table-responsive .tb-heading-container {
+.sidebar-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 7px;
+  padding: 16px;
 }
-.dashboard-main .right-side .orders .table-responsive .tb-heading-container .heading,
-.dashboard-main .right-side .users .table-responsive .tb-heading-container .heading {
-  padding: 15px 0;
+.sidebar-header .app-icon {
+  width: 24px;
+  color: #ffffff;
 }
-.dashboard-main .right-side .orders .table-responsive .tb-heading-container a,
-.dashboard-main .right-side .users .table-responsive .tb-heading-container a {
-  color: #885ff8;
+.sidebar-list {
+  list-style-type: none;
+  padding: 0;
 }
-.dashboard-main .right-side .orders .table-responsive .table thead th,
-.dashboard-main .right-side .users .table-responsive .table thead th {
-  border-bottom: none;
+.sidebar-list-item {
+  position: relative;
+  margin-bottom: 4px;
+}
+.sidebar-list-item a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 16px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 24px;
+  transition-duration: 0.4s;
+}
+.sidebar-list-item svg {
+  margin-right: 8px;
+}
+.sidebar-list-item .svg-icon path,
+.sidebar-list-item .svg-icon polygon,
+.sidebar-list-item .svg-icon rect {
+  fill: #ffffff;
+}
+.sidebar-list-item:hover {
+  background-color: #885ff8;
+  transition-duration: 0.4s;
+}
+.sidebar-list-item.active {
+  background-color: #1d283c;
+}
+.sidebar-list-item.active:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  background-color: #885ff8;
+  height: 100%;
+  width: 4px;
+}
+@media screen and (max-width: 1024px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+.account-info {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  margin-top: auto;
+}
+.account-info-picture {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.account-info-picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.account-info-name {
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0 8px;
+  overflow: hidden;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.db-container {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  max-width: 2000px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin: 0 auto;
+}
+.db-container .db-content {
+  padding: 16px;
+  background-color: #101827;
+  height: 100%;
+  flex: 1;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.db-container .db-content-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4px;
+}
+.db-container .db-content-header-text {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  margin: 0;
+}
+.db-container .db-content-header .mode-switch {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 8px;
+  cursor: pointer;
+}
+.db-container .db-content-header .mode-switch .moon {
+  fill: #ffffff;
+}
+.db-container .db-content-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 4px;
+}
+.db-container .db-content-actions-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+@media screen and (max-width: 520px) {
+  .db-container .db-content-actions {
+    flex-direction: column;
+  }
+  .db-container .db-content-actions .search-bar {
+    max-width: 100%;
+    order: 2;
+  }
+  .db-container .db-content-actions .app-content-actions-wrapper {
+    padding-bottom: 16px;
+    order: 1;
+  }
 }
 
 .top-container .heading {
@@ -186,8 +261,12 @@
   align-items: center;
 }
 
-.wrap {
-  background-color: #e3e5e6;
+body {
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  background-color: #101827;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {

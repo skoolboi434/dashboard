@@ -2,8 +2,12 @@
 @import 'components/_components';
 @import 'pages/_pages';
 
-.wrap {
-  background-color: $gray;
+body {
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  background-color: $db-bg;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
